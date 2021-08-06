@@ -1,7 +1,10 @@
+#ifndef OPCODE
+#define OPCODE
+
 // CPU 4 OpCodes and specification can be found at
 // https://robotics.ee.uwa.edu.au/courses/embedded/tutorials/tutorials/tutorial_2/T2_second_page.htm
 
-enum class OpCode {
+enum class OpCode : unsigned char {
     LOAD_M = 0,
     STORE  = 1,
     NOT    = 2,
@@ -19,3 +22,5 @@ enum class OpCode {
     OR_I   = 14,
     BRA    = 15,
 };
+
+#endif
