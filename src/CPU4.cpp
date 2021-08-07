@@ -26,7 +26,7 @@ void CPU4::Step(){
     Code = Mem[PC++];
     Address = Mem[PC];
 
-    OpCode op = static_cast<OpCode>(Code);
+    OpCode op = static_cast<OpCode>(Code & 0b00001111);
     switch (op)
     {
         case OpCode::LOAD_M:
