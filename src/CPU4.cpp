@@ -1,5 +1,5 @@
 #include "CPU4.hpp"
-#include "op-codes.hpp"
+#include "OpCode.hpp"
 
 #include <iomanip>
 
@@ -119,8 +119,8 @@ void CPU4::Run(unsigned int cycles){
 //-----------------------------------------------
 // UTILITIES
 //-----------------------------------------------
-unsigned char* CPU4::GetMemory(){
-    return NULL;
+const unsigned char* CPU4::GetMemory(){
+    return Mem;
 }
 
 

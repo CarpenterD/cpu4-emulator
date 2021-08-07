@@ -22,7 +22,7 @@ namespace emulator{
             CPU4(unsigned char *memory);
 
             void Run(unsigned int cycles);
-            unsigned char* GetMemory();
+            const unsigned char* GetMemory();
 
             friend std::ostream& operator<< (std::ostream& stream, const CPU4& cpu);
     };
