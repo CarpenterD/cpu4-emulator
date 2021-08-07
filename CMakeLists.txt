@@ -7,6 +7,6 @@ set(CMAKE_CXX_STANDARD_REQUIRED True)
 
 # Add files and executable
 set(SRC_DIR src)
-file(GLOB SOURCES ${SRC_DIR}/*.cpp)
+file(GLOB CPU_SOURCES ${SRC_DIR}/cpu/*.cpp)
 
-add_executable(cpu4 ${SOURCES})
+add_executable(cpu4 ${CPU_SOURCES})
