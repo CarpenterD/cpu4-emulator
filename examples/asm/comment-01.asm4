@@ -1,0 +1,7 @@
+.text
+    LOADI 0xFF #this is a comment
+    ADDI  0x01
+    BRA   0xFC
+#this is also a comment
+    SUBI 23
+

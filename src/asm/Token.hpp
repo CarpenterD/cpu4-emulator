@@ -8,7 +8,9 @@ namespace asm4
     struct Token
     {
         public:
-            std::string Token;
+            Token(std::string text, int column, int row);
+
+            std::string Text;
             int Col;
             int Row;
     };

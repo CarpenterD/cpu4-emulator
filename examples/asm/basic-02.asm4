@@ -1,0 +1,7 @@
+.text
+    LOADI 0xFF
+    ADDI  0x01
+label:
+    BRA   label
+
+    LOAD $1F

@@ -108,7 +108,7 @@ int main(int argc, char *argv[]){
     std::cout << "Writing to '" << outputFile << "'" << std::endl;
 
     std::string contents = asm4::io::ReadTextFromFile(inputFile);
-    asm4::lex::GetTokens(contents);
+    std::vector<asm4::Token> tokens = asm4::lex::GetTokens(contents);
     
     return EXIT_SUCCESS;
 }
